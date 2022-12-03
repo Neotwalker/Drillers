@@ -1,0 +1,38 @@
+<svg width="812" height="290" viewBox="0 0 812 290" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M63 286V7" stroke="#12253B" stroke-opacity="0.2"/>
+<path d="M121 286V7" stroke="#12253B" stroke-opacity="0.2"/>
+<path d="M178 286V7" stroke="#12253B" stroke-opacity="0.2"/>
+<path d="M236 286V7" stroke="#12253B" stroke-opacity="0.2"/>
+<path d="M293 286V7" stroke="#12253B" stroke-opacity="0.2"/>
+<path d="M351 286V7" stroke="#12253B" stroke-opacity="0.2"/>
+<path d="M408 286V7" stroke="#12253B" stroke-opacity="0.2"/>
+<path d="M465 286V7" stroke="#12253B" stroke-opacity="0.2"/>
+<path d="M523 286V7" stroke="#12253B" stroke-opacity="0.2"/>
+<path d="M580 286V7" stroke="#12253B" stroke-opacity="0.2"/>
+<path d="M638 286V7" stroke="#12253B" stroke-opacity="0.2"/>
+<path d="M695 286V7" stroke="#12253B" stroke-opacity="0.2"/>
+<path d="M753 286V7" stroke="#12253B" stroke-opacity="0.2"/>
+<path d="M810 286V7" stroke="#12253B" stroke-opacity="0.2"/>
+<path d="M9.9999 6.99997L810 7" stroke="#12253B" stroke-opacity="0.2"/>
+<path d="M9.9999 65L810 65" stroke="#12253B" stroke-opacity="0.2"/>
+<path d="M9.9999 122L810 122" stroke="#12253B" stroke-opacity="0.2"/>
+<path d="M9.9999 179L810 179" stroke="#12253B" stroke-opacity="0.2"/>
+<path d="M9.9999 237L810 237" stroke="#12253B" stroke-opacity="0.2"/>
+<path d="M9 7V287H810" stroke="#12253B"/>
+<path d="M614.5 29.5C686.678 9.20044 810.5 7 810.5 7L809 286.997H13.4873C11.2072 287.003 10 286.997 10 286.997H13.4873C40.7505 286.916 221.409 284.909 325.913 246.428C471.741 192.73 462.901 72.136 614.5 29.5Z" fill="url(#paint0_linear_151_2)"/>
+<path d="M10 286.997C10 286.997 212.67 288.127 325.913 246.428C471.741 192.73 462.901 72.136 614.5 29.5C686.678 9.20044 810.5 7 810.5 7L809 286.997H10Z" stroke="black"/>
+<circle cx="6" cy="284" r="6" fill="#12253B"/>
+<circle cx="134" cy="280" r="6" fill="#12253B"/>
+<circle cx="304" cy="253" r="6" fill="#12253B"/>
+<circle cx="441" cy="161" r="6" fill="#12253B"/>
+<circle cx="510" cy="87" r="6" fill="#12253B"/>
+<circle cx="577" cy="43" r="6" fill="#12253B"/>
+<circle cx="682" cy="18" r="6" fill="#12253B"/>
+<circle cx="799" cy="6" r="6" fill="#12253B"/>
+<defs>
+<linearGradient id="paint0_linear_151_2" x1="409.5" y1="-6" x2="409.5" y2="287" gradientUnits="userSpaceOnUse">
+<stop stop-color="#12253B" stop-opacity="0.41"/>
+<stop offset="1" stop-color="#D9D9D9" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
