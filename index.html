@@ -46,7 +46,7 @@
 									<div class="icon"></div>
 									<div class="icon"></div>
 								</div>
-								<a href="#modal" class="button button--accent">Заказать услугу</a>
+								<a href="#modal" class="button button--accent open">Заказать услугу</a>
 							</div>
 							<div class="header--bottom">
 								<div class="info">
@@ -60,7 +60,15 @@
 									<ul class="menu--list">
 										<li><a href="#">ассоциация</a></li>
 										<li><a href="#">членство</a></li>
-										<li><a href="#">услуги</a></li>
+										<li>услуги
+											<ul>
+												<li><a href="#">Бурение скважин</a></li>
+												<li><a href="#">Обустройство скважин</a></li>
+												<li><a href="#">Инженерно-геологические изыскания</a></li>
+												<li><a href="#">Порядок заказа услуги</a></li>
+												<li><a href="#modal" class="open">Заказать услугу</a></li>
+											</ul>
+										</li>
 										<li><a href="#">Отзывы</a></li>
 										<li><a href="#">галерея</a></li>
 										<li><a href="#">Новости</a></li>
@@ -392,7 +400,37 @@
 			</div>
 		</footer>
 	</div>
-
+	<div class="modal" id="modal">
+		<div class="modal--wrapper">
+			<div class="title h3">Заказать услугу</div>
+			<div class="text">Ассоциация объединяет квалифицированных специалистов и осуществляет контроль за качеством и
+				исполнением предоставляемых услуг. Ваше обращение в Ассоциацию за предоставлением услуг не влияет на формирование цен
+				исполнителя.
+			</div>
+			<form action="#" class="form">
+				<input type="text" name="Контактное лицо" placeholder="Контактное лицо" required>
+				<input id="phone_2" type="tel" name="Телефон" placeholder="+7 (___)___-__-__" required>
+				<select name="Требуемый вид услуг">
+					<option disabled selected>Требуемый вид услуг</option>
+					<option>Бур</option>
+					<option>Бур</option>
+					<option>Бур</option>
+				</select>
+				<input type="text" name="Город, район, поселок" placeholder="Город, район, поселок">
+				<input type="text" name="Комментарий" placeholder="Комментарий">
+				<div class="check">
+					<input type="checkbox" id="check1" name="check1">
+					<label for="check1">
+						<span>
+							Даю согласие на обработку своих персональных данных в соответствии с 
+							<a href="#">Политикой о конфиденциальности</a>
+						</span>
+					</label>
+				</div>
+				<button class="button">Отправить заявку</button>
+			</form>
+		</div>
+	</div>
 	<script src="js/scripts.min.js"></script>
 
 </body>

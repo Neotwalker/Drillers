@@ -1,6 +1,6 @@
 $(function() {
 
-	$("#phone_1").mask("+7 (999) 999-9999");
+	$("#phone_1, #phone_2").mask("+7 (999) 999-9999");
 
 	$('.info_1').hover( function(){
 		$('.info-1').toggleClass('active')
@@ -26,4 +26,22 @@ $(function() {
 	$('.info_8').hover( function(){
 		$('.info-8').toggleClass('active')
 	});
+
+	let container = $(".modal--wrapper");
+	let body = $(".modal");
+	$(".open").click(function(e) {
+		e.preventDefault();
+		$("body").css('overflow-y', 'hidden');
+		body.toggleClass('modal--open');
+		body.toggleClass("overlay");
+	});
+	
+	$(document).mouseup(function (e) {
+    if (container.has(e.target).length === 0){
+			$("body").css('overflow-y', 'scroll');
+      body.removeClass('modal--open');
+			body.removeClass("overlay");
+    }
+  });
+
 });
