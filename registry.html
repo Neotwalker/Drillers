@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Ассоциация буровых мастеров</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#12253B">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#12253B">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#12253B">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<div class="main--wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<div class="header--wrapper">
+						<a href="index.html" class="logo col-lg-1">
+							<img src="img/logo.svg" alt="Ассоциация буровых мастеров ">
+						</a>
+						<div class="col-lg-11">
+							<div class="header--top">
+								<div class="icons">
+									<div class="icon"></div>
+									<div class="icon"></div>
+									<div class="icon"></div>
+									<div class="icon"></div>
+								</div>
+								<a href="#modal" class="button button--accent open">Заказать услугу</a>
+							</div>
+							<div class="header--bottom">
+								<div class="info">
+									<div class="phones">
+										<a href="tel:+79874092009" class="phone">8 (987) 409-20-09</a>
+										<a href="tel:+78435282939" class="phone">8 (843) 528-29-39</a>
+									</div>
+									<p class="text">Звонки принимаются с 9.00 до 21.00</p>
+								</div>
+								<nav class="menu">
+									<ul class="menu--list">
+										<li><a href="index.html">ассоциация</a></li>
+										<li>членство
+											<ul>
+												<li><a href="registry.html">Реестр членов Ассоциации</a></li>
+												<li><a href="membership.html">Условия членства</a></li>
+												<!-- <li><a href="#">Список исключенных членов и кандидатов</a></li> -->
+											</ul>
+										</li>
+										<li>услуги
+											<ul>
+												<li><a href="drilling.html">Бурение скважин</a></li>
+												<li><a href="well.html">Обустройство скважин</a></li>
+												<li><a href="assistance.html">ЮРИДИЧЕСКАЯ ПОМОЩЬ</a></li>
+											</ul>
+										</li>
+										<li><a href="reviews.html">Отзывы</a></li>
+										<li><a href="gallery.html">галерея</a></li>
+										<li><a href="news.html">Новости</a></li>
+										<li><a href="contacts.html">контакты</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-12">
+						<div class="header--banner">
+							<div class="image">
+								<img src="img/bg-1.png" alt="Ассоциация буровых мастеров некоммерческая организация">
+								<h1 class="h1 title"><span>Ассоциация буровых мастеров</span> некоммерческая организация</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="content">
+			<div class="registry">
+				<div class="container">
+					<div class="row">
+						<h1 class="h1">Реестр членов Ассоциации</h1>
+						<div class="search__filter">
+							<div class="search_reestr">
+								<input class="input_search" type="text" id="reestr_search" placeholder="Проверить мастера по регистрационному номеру">
+								<div class="loop"></div>
+							</div>
+							<div class="filter">
+								<select name="filter" id="filter">
+									<option disabled selected>Сортировать по...</option>
+									<option data-sort='operating:asc'>Действующие</option>
+									<option data-sort='excluded:asc'>Исключенные</option>
+									<option data-sort='ceased:asc'>Прекратившие деятельность</option>
+								</select>
+							</div>
+						</div>
+						<div id="reestr_content" class="reestr">
+								<div class="titles">
+									<div>Порядк. номер</div>
+									<div>Статус</div>
+									<div>Регистр. №</div>
+									<div>Наименование</div>
+									<div>ОПФ</div>
+									<div>ИНН/ОГРН</div>
+									<div>№ свидет-ва</div>
+									<div>Дата вступл/искл</div>
+									<div>Контакты</div>
+									<div>Город</div>
+									<div>Статус</div>
+									<div>Отзывы</div>
+								</div>
+								<div class="reestr_item" data-operating='1' data-excluded='2' data-ceased='3'>
+									<div>1</div>
+									<div>
+										<p>Состоит</p>
+									</div>
+									<div>200914</div>
+									<div>Набиев Рафис Рагипович</div>
+									<div>физ.лицо</div>
+									<div>—</div>
+									<div>0014</div>
+									<div>16.09.2020</div>
+									<div>89061226759</div>
+									<div>Казань</div>
+									<div>Действующие</div>
+									<div><a href="#">1</a></div>
+								</div>
+								<div class="reestr_item" data-excluded='1' data-operating='2' data-ceased='3'>
+									<div>2</div>
+									<div>
+										<p>Состоит</p>
+									</div>
+									<div>201117</div>
+									<div>Курбанов Салават Камильевич</div>
+									<div>физ.лицо</div>
+									<div>—</div>
+									<div>0017</div>
+									<div>17.11.2020</div>
+									<div>89600422995</div>
+									<div>Казань</div>
+									<div>Исключенные</div>
+									<div><a href="#">1</a></div>
+								</div>
+								<div class="reestr_item" data-ceased='1' data-operating='2' data-excluded='3'>
+									<div>3</div>
+									<div>
+										<p>Состоит</p>
+									</div>
+									<div>201118</div>
+									<div>Шафигуллин Ильмир Ильфатович</div>
+									<div>физ.лицо</div>
+									<div>—</div>
+									<div>0018</div>
+									<div>25.11.2020</div>
+									<div>89061110800</div>
+									<div>Казань</div>
+									<div>Прекратившие деятельность</div>
+									<div><a href="#">1</a></div>
+								</div>
+								<div class="reestr_item" data-operating='1' data-excluded='2' data-ceased='3'>
+									<div>4</div>
+									<div>
+										<p>Состоит</p>
+									</div>
+									<div>2102019</div>
+									<div>Кадыров Алмаз Хусаинович</div>
+									<div>физ.лицо</div>
+									<div>—</div>
+									<div>0019</div>
+									<div>24.02.2021</div>
+									<div>89046722848</div>
+									<div>Казань</div>
+									<div>Действующие</div>
+									<div><a href="#">1</a></div>
+								</div>
+								<div class="reestr_item" data-excluded='1' data-operating='2' data-ceased='3'>
+									<div>5</div>
+									<div>
+										<p>Состоит</p>
+									</div>
+									<div>190504</div>
+									<div>Хабибуллин Радик Рамисович</div>
+									<div>физ.лицо</div>
+									<div>—</div>
+									<div>0004</div>
+									<div>27.05.2019</div>
+									<div>89872887137</div>
+									<div>Казань</div>
+									<div>Исключенные</div>
+									<div><a href="https://abm-rt.ru/category/otzyvy/habibullin-radik-ramisovich/">2</a></div>
+								</div>
+								<div class="reestr_item" data-operating='1' data-excluded='2' data-ceased='3'>
+									<div>6</div>
+									<div>
+										<p>Состоит</p>
+									</div>
+									<div>200408</div>
+									<div>Рахматуллин Адель Ринатович</div>
+									<div>физ.лицо</div>
+									<div>—</div>
+									<div>0008</div>
+									<div>11.04.2020</div>
+									<div>89655886521</div>
+									<div>Казань</div>
+									<div>Действующие</div>
+									<div><a href="https://abm-rt.ru/category/otzyvy/rahmatullin-adel-rinatovich/">2</a></div>
+								</div>
+								<div class="reestr_item" data-excluded='1' data-operating='2' data-ceased='3'>
+									<div>7</div>
+									<div>
+										<p>Состоит</p>
+									</div>
+									<div>200915</div>
+									<div>Хуснутдинов Ильфат Булатович</div>
+									<div>физ.лицо</div>
+									<div>—</div>
+									<div>0015</div>
+									<div>18.09.2020</div>
+									<div>89655953070</div>
+									<div>Казань</div>
+									<div>Исключенные</div>
+									<div><a href="#">1</a></div>
+								</div>
+								<div class="reestr_item" data-operating='1' data-excluded='2' data-ceased='3'>
+									<div>8</div>
+									<div>
+										<p>Состоит</p>
+									</div>
+									<div>200509</div>
+									<div>Галеев Ирек Рафаэлевич</div>
+									<div>физ.лицо</div>
+									<div>—</div>
+									<div>0009</div>
+									<div>28.05.2020</div>
+									<div>89600400405</div>
+									<div>Казань</div>
+									<div>Действующие</div>
+									<div><a href="#">1</a></div>
+								</div>
+								<div class="reestr_item" data-excluded='1' data-operating='2' data-ceased='3'>
+									<div>9</div>
+									<div>
+										<p>Состоит</p>
+									</div>
+									<div>210420</div>
+									<div>Хакимов Раиль Зуфярович</div>
+									<div>физ.лицо</div>
+									<div>—</div>
+									<div>0020</div>
+									<div>19.04.2021</div>
+									<div>89274822777</div>
+									<div>Казань</div>
+									<div>Исключенные</div>
+									<div><a href="#">1</a></div>
+								</div>
+								<div class="reestr_item" data-operating='1' data-excluded='2' data-ceased='3'>
+									<div>10</div>
+									<div>
+										<p>Состоит</p>
+									</div>
+									<div>190806</div>
+									<div>Махмутов Айдар Рустамович</div>
+									<div>физ.лицо</div>
+									<div>—</div>
+									<div>0006</div>
+									<div>22.08.2019</div>
+									<div>89393932030</div>
+									<div>Казань</div>
+									<div>Действующие</div>
+									<div><a href="https://abm-rt.ru/category/otzyvy/mahmutov-ajdar-rustamovich/">3</a></div>
+								</div>
+								<div class="reestr_item" data-excluded='1' data-operating='2' data-ceased='3'>
+									<div>11</div>
+									<div>
+										<p>Состоит</p>
+									</div>
+									<div>180302</div>
+									<div>Шаймарданов Динар Рашидович</div>
+									<div>физ.лицо</div>
+									<div>—</div>
+									<div>0002</div>
+									<div>26.03.2018</div>
+									<div>89172660208</div>
+									<div>Казань</div>
+									<div>Исключенные</div>
+									<div><a href="https://abm-rt.ru/category/otzyvy/shajmardanov-dinar-rashidovich/">29</a>
+									</div>
+								</div>
+								<div class="reestr_item" data-operating='1' data-excluded='2' data-ceased='3'>
+									<div>12</div>
+									<div>
+										<p>Состоит</p>
+									</div>
+									<div>200207</div>
+									<div>Сетюков Рустем Ришатович</div>
+									<div>физ.лицо</div>
+									<div>—</div>
+									<div>0007</div>
+									<div>21.02.2020</div>
+									<div>89179179594</div>
+									<div>Казань</div>
+									<div>Действующие</div>
+									<div><a href="#">1</a></div>
+								</div>
+								<div class="reestr_item" data-excluded='1' data-operating='2' data-ceased='3'>
+									<div>13</div>
+									<div>
+										<p>Состоит</p>
+									</div>
+									<div>220423</div>
+									<div>Байрамов Илшат Хосаенович</div>
+									<div>физ.лицо</div>
+									<div>—</div>
+									<div>0023</div>
+									<div>8.04.2022</div>
+									<div>89172443219</div>
+									<div>Казань</div>
+									<div>Исключенные</div>
+									<div><a href="#">1</a></div>
+								</div>
+								<div class="reestr_item" data-excluded='1' data-operating='2' data-ceased='3'>
+									<div>14</div>
+									<div>
+										<p>Состоит</p>
+									</div>
+									<div>190705</div>
+									<div>ИП Курыгина К.М. (Аквастрой)</div>
+									<div>ИП</div>
+									<div>166110787456</div>
+									<div>0005</div>
+									<div>12.07.2019</div>
+									<div>89656189990</div>
+									<div>Казань</div>
+									<div>Исключенные</div>
+									<div><a href="#">1</a></div>
+								</div>
+								<div class="reestr_item" data-operating='1' data-excluded='2' data-ceased='3'>
+									<div>15</div>
+									<div>
+										<p>Состоит</p>
+									</div>
+									<div>200711</div>
+									<div>Чинчаркин Олег Александрович</div>
+									<div>физ.лицо</div>
+									<div>—</div>
+									<div>0011</div>
+									<div>8.07.2020</div>
+									<div>89600379799</div>
+									<div>Казань</div>
+									<div>Действующие</div>
+									<div><a href="#">1</a></div>
+								</div>
+								<div class="reestr_item" data-excluded='1' data-operating='2' data-ceased='3'>
+									<div>16</div>
+									<div>
+										<p>Состоит</p>
+									</div>
+									<div>210821</div>
+									<div>Хисамутдинов Айрат Закиевич</div>
+									<div>физ.лицо</div>
+									<div>—</div>
+									<div>0021</div>
+									<div>4.08.2021</div>
+									<div>89325585223</div>
+									<div>Казань</div>
+									<div>Исключенные</div>
+									<div><a href="#">1</a></div>
+								</div>
+								<div class="reestr_item" data-operating='1' data-excluded='2' data-ceased='3'>
+									<div>17</div>
+									<div>
+										<p>Состоит</p>
+									</div>
+									<div>200610</div>
+									<div>Захватов Игорь Евгеньевич</div>
+									<div>физ.лицо</div>
+									<div>—</div>
+									<div>0010</div>
+									<div>5.06.2020</div>
+									<div>89050267466</div>
+									<div>Казань</div>
+									<div>Действующие</div>
+									<div><a href="#">1</a></div>
+								</div>
+								<div class="reestr_item" data-excluded='1' data-operating='2' data-ceased='3'>
+									<div>18</div>
+									<div>
+										<p>Состоит</p>
+									</div>
+									<div>200916</div>
+									<div>Нурмухаметов Ильнур Мансурович</div>
+									<div>физ.лицо</div>
+									<div>—</div>
+									<div>0016</div>
+									<div>21.09.2020</div>
+									<div>89375255558</div>
+									<div>Казань</div>
+									<div>Исключенные</div>
+									<div><a href="#">1</a></div>
+								</div>
+								<div class="reestr_item" data-operating='1' data-excluded='2' data-ceased='3'>
+									<div>19</div>
+									<div>
+										<p>Состоит</p>
+									</div>
+									<div>180301</div>
+									<div>Шаймарданов Рашид Сабирзянович</div>
+									<div>физ.лицо</div>
+									<div>—</div>
+									<div>0001</div>
+									<div>26.03.2018</div>
+									<div>89178928474</div>
+									<div>Казань</div>
+									<div>Действующие</div>
+									<div><a href="https://abm-rt.ru/category/otzyvy/shajmardanov-rashid-sabirzyanovich/">22</a></div>
+								</div>
+								<div class="reestr_item" data-excluded='1' data-operating='2' data-ceased='3'>
+									<div>20</div>
+									<div>
+										<p>Состоит</p>
+									</div>
+									<div>210622</div>
+									<div>Мавлютов Айрат Назирович</div>
+									<div>физ.лицо</div>
+									<div>—</div>
+									<div>0022</div>
+									<div>21.06.2021</div>
+									<div>89178993907</div>
+									<div>Казань</div>
+									<div>Исключенные</div>
+									<div><a href="#">1</a></div>
+								</div>
+								<div class="reestr_item" data-operating='1' data-excluded='2' data-ceased='3'>
+									<div>21</div>
+									<div>
+										<p>Состоит</p>
+									</div>
+									<div>200712</div>
+									<div>Галиакберов Гаяз Рашитович</div>
+									<div>физ.лицо</div>
+									<div>—</div>
+									<div>0012</div>
+									<div>16.07.2020</div>
+									<div>89172810390</div>
+									<div>Альметьевск</div>
+									<div>Действующие</div>
+									<div><a href="#">1</a></div>
+								</div>
+								<div class="reestr_item" data-excluded='1' data-operating='2' data-ceased='3'>
+									<div>22</div>
+									<div>
+										<p>Состоит</p>
+									</div>
+									<div>200813</div>
+									<div>Самойлов Григорий Александрович</div>
+									<div>физ.лицо</div>
+									<div>—</div>
+									<div>0013</div>
+									<div>19.08.2020</div>
+									<div>89274155090</div>
+									<div>Казань</div>
+									<div>Исключенные</div>
+									<div><a href="#">1</a></div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="header--wrapper">
+						<div class="logo col-lg-1">
+							<img src="img/logo.svg" alt="Ассоциация буровых мастеров ">
+						</div>
+						<div class="col-lg-11">
+							<div class="header--top">
+								<div class="icons">
+									<div class="icon"></div>
+									<div class="icon"></div>
+									<div class="icon"></div>
+									<div class="icon"></div>
+								</div>
+							</div>
+							<div class="header--bottom">
+								<div class="info">
+									<div class="phones">
+										<a href="tel:+79874092009" class="phone">8 (987) 409-20-09</a>
+										<a href="tel:+78435282939" class="phone">8 (843) 528-29-39</a>
+									</div>
+									<p class="text">Звонки принимаются с 9.00 до 21.00</p>
+								</div>
+								<nav class="menu">
+									<ul class="menu--list">
+										<li><a href="index.html">ассоциация</a></li>
+										<li>членство
+											<ul>
+												<li><a href="registry.html">Реестр членов Ассоциации</a></li>
+												<li><a href="membership.html">Условия членства</a></li>
+												<!-- <li><a href="#">Список исключенных членов и кандидатов</a></li> -->
+											</ul>
+										</li>
+										<li>услуги
+											<ul>
+												<li><a href="drilling.html">Бурение скважин</a></li>
+												<li><a href="well.html">Обустройство скважин</a></li>
+												<li><a href="assistance.html">ЮРИДИЧЕСКАЯ ПОМОЩЬ</a></li>
+											</ul>
+										</li>
+										<li><a href="reviews.html">Отзывы</a></li>
+										<li><a href="gallery.html">галерея</a></li>
+										<li><a href="news.html">Новости</a></li>
+										<li><a href="contacts.html">контакты</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div class="modal" id="modal">
+		<div class="modal--wrapper">
+			<div class="title h3">Заказать услугу</div>
+			<div class="text">Ассоциация объединяет квалифицированных специалистов и осуществляет контроль за качеством и
+				исполнением предоставляемых услуг. Ваше обращение в Ассоциацию за предоставлением услуг не влияет на формирование цен
+				исполнителя.
+			</div>
+			<form action="#" class="form">
+				<input type="text" name="Контактное лицо" placeholder="Контактное лицо" required>
+				<input id="phone_2" type="tel" name="Телефон" placeholder="+7 (___)___-__-__" required>
+				<select name="Требуемый вид услуг">
+					<option disabled selected>Требуемый вид услуг</option>
+					<option>Бурение скважин на воду</option>
+					<option>Обустройство скважин</option>
+					<option>Инженерно-геологические изыскания</option>
+					<option>Ремонт скважины</option>
+					<option>Монтаж систем отопления</option>
+					<option>Автономная канализация частных домов</option>
+				</select>
+				<input type="text" name="Город, район, поселок" placeholder="Город, район, поселок">
+				<input type="text" name="Комментарий" placeholder="Комментарий">
+				<div class="check">
+					<input type="checkbox" id="check1" name="check1">
+					<label for="check1">
+						<span>
+							Даю согласие на обработку своих персональных данных в соответствии с 
+							<a href="#">Политикой о конфиденциальности</a>
+						</span>
+					</label>
+				</div>
+				<button class="button">Отправить заявку</button>
+			</form>
+		</div>
+	</div>
+	<div class="modal_1" id="#modal_1">
+		<div class="modal--wrapper">
+			<div class="title h3">Заявка на вступление в ассоциацию</div>
+			<form action="#" class="form">
+				<input type="text" name="Наименование" placeholder="Наименование / ИП / Физическое лицо" required>
+				<input type="text" name="Контактное лицо" placeholder="Контактное лицо" required>
+				<input type="text" name="Эл. почта" placeholder="Эл. почта" required>
+				<input id="phone_2" type="tel" name="Телефон" placeholder="+7 (___)___-__-__" required>
+				<input type="text" name="Сайт организации" placeholder="Сайт организации">
+				<div class="check">
+					<input type="checkbox" id="check2" name="check2">
+					<label for="check2">
+						<span>
+							Прошу принять меня в АБМ
+						</span>
+					</label>
+				</div>
+				<div class="check">
+					<input type="checkbox" id="check3" name="check3">
+					<label for="check3">
+						<span>
+							Даю согласие на обработку своих персональных данных в соответствии с 
+							<a href="#">Политикой о конфиденциальности</a>
+						</span>
+					</label>
+				</div>
+				<button class="button">Отправить заявку</button>
+			</form>
+		</div>
+	</div>
+	<script src="js/scripts.min.js"></script>
+</body>
+
+</html>
