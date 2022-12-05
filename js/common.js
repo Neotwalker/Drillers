@@ -62,7 +62,7 @@ $(function() {
 
 	$("#reestr_content").searcher({
 		itemSelector: ".reestr_item",
-		textSelector: "div",
+		textSelector: "td",
 		inputSelector: "#reestr_search",
 		toggle: function(item, containsText) {
 				// use a typically jQuery effect instead of simply showing/hiding the item element
