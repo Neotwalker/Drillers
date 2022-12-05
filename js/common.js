@@ -104,4 +104,12 @@ $(function() {
 	};
 	$("#filter").numericFlexboxSorting();
 
+	Fancybox.bind('[data-fancybox="gallery"]', {
+		Image: {
+			zoom: true,
+		},
+		hideScrollbar: true,
+	});
+
+
 });
