@@ -27,6 +27,19 @@ $(function() {
 		$('.info-8').toggleClass('active')
 	});
 
+	let mobile_wrapper = $(".menu");
+	let mobile_body = $(".header--mobile");
+	$(".burger").click(function() {
+		mobile_wrapper.toggleClass('menu--open');
+		$("body").css('overflow-y', 'hidden');
+		mobile_body.toggleClass("overlay");
+	});
+	$('.menu--close').click(function() {
+    mobile_wrapper.removeClass('menu--open');
+		$("body").css('overflow-y', 'scroll');
+		mobile_body.removeClass("overlay");
+	});
+
 	let container = $(".modal--wrapper");
 	let body = $(".modal");
 	$(".open").click(function(e) {
@@ -65,7 +78,6 @@ $(function() {
 		textSelector: "td",
 		inputSelector: "#reestr_search",
 		toggle: function(item, containsText) {
-				// use a typically jQuery effect instead of simply showing/hiding the item element
 				if (containsText){
 						$(item).fadeIn(100);
 				} else {

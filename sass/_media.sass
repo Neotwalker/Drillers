@@ -4,23 +4,250 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
-
+	.main
+		&--wrapper
+			&::before
+				left: 15px
+			&::after
+				right: 15px
+	.registry 
+		.search__filter
+			margin: 0 15px 32px
+		.table
+			margin-left: 15px
+			margin-right: 15px
+	.header
+		&--bottom 
+			.info 
+				.text
+					display: none
+	.drill 
+		.order 
+			.list 
+				.item
+					align-items: flex-start
+			.info
+				gap: 20px
+		.repair--title
+			gap: 20px
+	.assistance
+		&--block
+			.list
+				li
+					font-size: 16px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
-
+	.header
+		.container
+			position: relative
+		.block--wrap
+			position: fixed
+			width: 100%
+			left: 0
+			right: 0
+			z-index: 9
+			background-color: #fff
+		&--wrapper
+			max-width: 750px
+			margin: 0 auto
+			padding: 15px 0
+		&--banner
+			padding-top: 80px
+		&--top
+			margin-bottom: 0
+		&--bottom
+			.info
+				display: none
+			.menu
+				display: none
+	.footer
+		display: none
+	.advantages
+		&--list
+			flex-wrap: wrap
+			.item
+				flex: 1 1 calc((100% / 2) - 30px)
+	.specialists
+		&--wrapper
+			.specialist
+				flex: 100%
+				.block
+					max-width: 50%
+				.text
+					max-width: 50%
+	.partners 
+		.logos
+			flex-wrap: wrap
+			justify-content: center
+			img
+				flex: 1 1 calc((100% / 3) - 20px)
+	.drill
+		.drilling,
+		.order,
+		.repair
+			&--title
+				gap: 20px
+				.h2
+					max-width: 30%
+				.text
+					max-width: 70%
+			&--block
+				.list
+					.item
+						flex: 1 1 calc((100% / 2) - 32px)
+	.well,
+	.assistance
+		&--title
+			gap: 20px
+			.h2
+				max-width: 30%
+			.text
+				max-width: 70%
+	.assistance
+		&--block
+			.list
+				li
+					flex: 1 1 calc((100% / 2) - 30px)
+	.reviews
+		&--list
+			.item
+				max-width: 100%
+				margin: 0
+				&:nth-child(2n)
+					max-width: 100%
+				.review
+					max-width: 100%
+	.gallery
+		&--list
+			&.videos
+				.item
+					flex: calc((100% / 2) - 30px)
+			&.images
+				.item
+					flex: calc((100% / 4) - 30px)
+	.news
+		&--list
+			grid-template-columns: 1fr 1fr
+			grid-template-rows: 1fr 1fr
+			grid-template-areas: ". ." ". ."
+			.item
+				max-width: 100%
+				&:first-child
+					height: 100%
+					width: 100%
+					grid-area: auto
+					.h3
+						font-size: 10px
+					.excerpt
+						font-size: 8px
+					.date
+						font-size: 10px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
-
+	.h1, .h2
+		font-size: 28px
+	.main
+		&--wrapper
+			&::before,
+			&::after
+				display: none
+	.header,
+	section
+		padding: 0 !important
+		&::after
+			display: none !important
+	.header
+		&--mobile
+			.menu
+				width: 50%
+	.goals
+		&--left
+			display: flex
+			flex-direction: column
+			gap: 30px
+			.tablet
+				display: block
+				.h3
+					background-color: rgba(185,193,204,.16)
+					border-radius: 4px
+					font-size: 16px
+					font-weight: 700
+					padding: 8px
+					text-align: center
+		&--right
+			.block
+				flex-wrap: wrap
+				gap: 30px
+				.participation
+					display: none
+				.list
+					.item
+						.h3
+							font-size: 18px
+						.text
+							font-size: 14px
+	.drill
+		.order
+			.info
+				span
+					max-width: 70%
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
-
+	.header
+		&--top
+			.wrapper
+				display: none
+		&--bottom
+			.info
+				display: flex
+				width: 100%
+				.name
+					display: block
+					margin-bottom: 6px
+				.text
+					display: block
+		&--wrapper
+			padding-top: 28px
+			padding-bottom: 21px
+			.logo
+				padding-right: 8px
+			.block
+				padding-left: 0
+				display: flex
+				flex-direction: row-reverse
+				justify-content: space-between
+		&--banner
+			padding-top: 110px
+			.image
+				img
+					min-height: 88px
+				.h1
+					font-size: 13px
+					max-width: 194px
+		&--mobile
+			.menu
+				box-shadow: none
+				width: 100%
+	.goals
+		&--wrapper
+			flex-direction: column
+		&--left
+			width: 100%
+			.h2.mobile
+				display: block
+			.desktop
+				display: none
+			.mobile
+				display: block
+				object-fit: cover
+			.tablet
+				display: none
+		&--right
+			.h2.desktop
+				display: none
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
