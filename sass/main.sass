@@ -223,6 +223,7 @@ a
 		&.overlay
 			z-index: 9999
 		.menu
+			overflow-x: scroll
 			box-shadow: 1px 5px 10px rgba($dark, .5)
 			flex-direction: column
 			padding: 0 10px
@@ -257,7 +258,8 @@ a
 				li
 					margin-bottom: 12px
 					border-bottom: 1px solid rgba($dark, .5)
-					padding: 0 15px 6px
+					padding: 0 15px 10px
+					line-height: normal
 					ul
 						padding-left: 10px
 						padding-top: 11px
@@ -265,6 +267,8 @@ a
 							border-bottom: none
 							margin: 0
 							padding: 0
+						li
+							margin-bottom: 5px
 			.wrapper
 				padding: 0 15px
 				.icons
@@ -627,6 +631,15 @@ a
 			width: 100%
 			circle
 				cursor: pointer
+				r: 10px
+				&.info_1
+					cy: 279px
+					cx: 10px
+				&.info_2
+					cy: 279px
+				&.info_8
+					cy: 10px
+					cx: 802px
 		.infos
 			position: relative
 			.info
@@ -688,6 +701,7 @@ a
 				max-width: 289px
 				width: 100%
 				.h3
+					text-transform: uppercase
 					font-weight: 700
 					font-size: 18px
 					margin-bottom: 20px
@@ -696,7 +710,7 @@ a
 				font-weight: 300
 				font-size: 16px
 				line-height: normal
-				br
+				p
 					margin-bottom: 10px
 
 .partners
@@ -1075,6 +1089,8 @@ a
 			margin-top: 39px
 			p
 				margin-bottom: 20px
+				&:last-child
+					margin-bottom: 0
 
 .well
 	margin-top: 0
@@ -1101,6 +1117,8 @@ a
 			margin-bottom: 21px
 			p
 				margin-bottom: 14px
+				&:last-child
+					margin-bottom: 0
 			blockquote
 				margin-top: 0
 				font-size: 16px
@@ -1288,8 +1306,6 @@ a
 		grid-template-columns: 1fr 1fr 1fr 1fr
 		grid-template-rows: 1fr 1fr 1fr 1fr
 		gap: 15px 15px
-		justify-items: stretch
-		justify-content: space-between
 		width: 100%
 		grid-template-areas: "block block . ." "block block . ." ". . . ."
 		.item
