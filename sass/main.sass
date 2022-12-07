@@ -1412,4 +1412,29 @@ a
 .fancybox__thumbs
 	display: none
 
+.licensing
+	&--wrapper
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		gap: 30px
+		.block
+			&:first-child
+				flex: 511px
+				max-width: 511px
+			&:last-child
+				flex: 569px
+				max-width: 569px
+			.h1
+				margin: 0
+				margin-bottom: 37px
+			p
+				font-size: 18px
+				margin-bottom: 20px
+				&:first-child
+					margin-bottom: 51px
+			.image
+				img
+					border-radius: 5px
+
 @import "media" // Всегда в конце
